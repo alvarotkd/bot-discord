@@ -1,5 +1,9 @@
 import discord
 from discord.ext import commands  
+import youtube_dl 
+import os
+
+
 
 client = commands.Bot(command_prefix = "!")
 
@@ -42,7 +46,6 @@ client.command()
 async def stop(ctx):
     voice = discord.utils.get(client.voice_clients, guild=ctx.guild)
     voice.stop()
-    
 
 
 
@@ -52,5 +55,6 @@ async def stop(ctx):
 
 
 
-client.run ('OTMzNDcwODA0NTA5ODc2MjU1.YeiAbg.kXf8T2KWmCkPdNcdXZulZKLWM9Y')
+
+client.run ('OTMzNDcwODA0NTA5ODc2MjU1.YeiAbg.bZqATDZGsFKQrUGHfE1pEkd91as')
 
